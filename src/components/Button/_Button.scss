@@ -1,0 +1,76 @@
+.btn {
+    $btnColor: #0053d0;
+    $btnTextColor: #fff;
+    $btnEdge: 0.2em;
+    $btnHoleEdge: 0.1em;
+    $dropShadowColor: rgba(0,0,0,0.47);
+    $darkEdgeColor: rgba(0,0,0,0.27);
+    $lightEdgeColor: rgba(255,255,255,0.27);
+    $coloredDarkEdgeColor: darken($btnColor,10%);
+    background: $btnColor;
+    border: 0 {
+        radius: 0.375em;
+    };
+    color: $btnTextColor;
+    box-shadow:
+    // drop shadow
+    $btnEdge $btnEdge 0.5em $dropShadowColor,
+    // top, left, and right edges of hole
+    // 0 (-$btnHoleEdge) 0 $btnHoleEdge $darkEdgeColor,
+    // bottom edge of hole
+    0 $btnHoleEdge 0 $btnHoleEdge $lightEdgeColor,
+    // right edge of button
+    (-$btnEdge) 0 $btnEdge $coloredDarkEdgeColor inset,
+    // top edge of button
+    0 $btnEdge $btnEdge $lightEdgeColor inset,
+    // left edge of button
+    $btnEdge 0 $btnEdge $lightEdgeColor inset,
+    // bottom edge of button
+    0 (-$btnEdge) $btnEdge $coloredDarkEdgeColor inset;
+    cursor: pointer;
+    font: 24px/1.5 sans-serif;
+    margin: 1.5em auto;
+    padding: 0.5em 1em;
+    -webkit-tap-highlight-color: transparent;
+    &, span {
+        display: block;
+    };
+}
+.red {
+    $btnColor: red;
+    $btnTextColor: #fff;
+    $btnEdge: 0.2em;
+    $btnHoleEdge: 0.1em;
+    $dropShadowColor: rgba(0,0,0,0.47);
+    $darkEdgeColor: rgba(0,0,0,0.27);
+    $lightEdgeColor: rgba(255,255,255,0.27);
+    $coloredDarkEdgeColor: darken($btnColor,10%);
+    background: $btnColor;
+    border: 0 {
+        radius: 0.375em;
+    };
+    color: $btnTextColor;
+    box-shadow:
+    // drop shadow
+    $btnEdge $btnEdge 0.5em $dropShadowColor,
+    // top, left, and right edges of hole
+    // 0 (-$btnHoleEdge) 0 $btnHoleEdge $darkEdgeColor,
+    // bottom edge of hole
+    0 $btnHoleEdge 0 $btnHoleEdge $lightEdgeColor,
+    // right edge of button
+    (-$btnEdge) 0 $btnEdge $coloredDarkEdgeColor inset,
+    // top edge of button
+    0 $btnEdge $btnEdge $lightEdgeColor inset,
+    // left edge of button
+    $btnEdge 0 $btnEdge $lightEdgeColor inset,
+    // bottom edge of button
+    0 (-$btnEdge) $btnEdge $coloredDarkEdgeColor inset;
+    cursor: pointer;
+    font: 24px/1.5 sans-serif;
+    margin: 1.5em auto;
+    padding: 0.5em 1em;
+    -webkit-tap-highlight-color: transparent;
+    &, span {
+        display: block;
+    };
+}

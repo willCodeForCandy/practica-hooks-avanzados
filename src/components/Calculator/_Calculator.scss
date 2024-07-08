@@ -1,0 +1,26 @@
+#calculator {
+    background-color: aliceblue;
+    @include flex(column, 20px);
+    padding: 20px;
+    border-radius: 10px;
+ .container {
+    @include flex(row, 20px);
+ }
+ input {
+   padding: 8px 10px;
+   border-radius: 10px;
+   font-family: $font-family_1;
+   font-size: large;
+   &::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+ }
+ p{
+   color: $color_4;
+ }
+}

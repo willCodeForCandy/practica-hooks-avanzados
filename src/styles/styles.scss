@@ -1,0 +1,36 @@
+/* VARIABLES */
+@import './global/variables';
+
+/* MIXINS */
+@import './global/mixins';
+
+/* COMPONENTS */
+@import '../components/Button/Button';
+@import '../components/Calculator/Calculator';
+
+:root {
+	font-family: $font-family_1;
+	line-height: 1.5;
+	font-weight: 400;
+	color: $color_1;
+	background-color: $background-color_1;
+}
+a {
+	font-weight: 500;
+	color: $color_2;
+	text-decoration: inherit;
+	&:hover {
+		color: $color_3;
+	}
+}
+body {
+	margin: 0;
+@include flex(row, 20px);
+	min-width: 320px;
+	min-height: 100vh;
+}
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
